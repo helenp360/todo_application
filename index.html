@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous"
+  />
+  <link href="styles.css" rel="stylesheet" type="text/css" />
+  <title>To Do List</title>
+</head>
+<body>
+
+  <div class = "container">
+    <h1>To Do List</h1>
+  </div>
+
+  <br>
+  <!-- <div class="input-group mb-3">
+    <input type="text" class="form-control" placeholder="What do you need to do?" aria-label="Recipient's username" aria-describedby="button-addon2">
+    <div class="input-group-append">
+      <button class="btn btn-outline-secondary" type="button" id="button-addon2">Add</button>
+    </div>
+  </div> -->
+  <div class="container">
+
+    <!-- <div class="input-group">
+      <input type="text" aria-label="Thing" class="form-control" placeholder="What do you need to do?">
+      <input type="date" aria-label="Due date" class="form-control" placeholder="When is it due?">
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Action</a>
+        <a class="dropdown-item" href="#">Another action</a>
+        <a class="dropdown-item" href="#">Something else here</a>
+      </div>
+      <div class="input-group-append">
+          <button class="btn btn-outline-secondary" type="button" id="button-addon2">Add</button>
+      </div>
+    </div> -->
+
+
+
+    <div class="input-group">
+      <input type="text" class="form-control" aria-label="Text input with dropdown button" placeholder="What do you need to do?">
+      <div class="input-group-append">
+        <select class="custom-select" id="inputGroupSelect02">
+          <option selected>How urgent is it?</option>
+          <option value="1">Urgent</option>
+          <option value="2">Important</option>
+          <option value="3">Non-urgent</option>
+        </select>
+      </div>
+      <div class="input-group-append">
+        <button class="btn btn-outline-secondary" type="button" id="button-addon2">Add</button>
+      </div>
+    </div>
+
+    <!-- <div class="input-group mb-3">
+      <select class="custom-select" id="inputGroupSelect02">
+        <option selected>How urgent is this?</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+      </select>
+      <div class="input-group-append">
+        <label class="input-group-text" for="inputGroupSelect02">Add</label>
+      </div>
+    </div> -->
+
+
+
+  </div>
+  
+
+  
+
+  <br>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-sm-4 listOfThings" >
+        You have 2 URGENT things to do!
+        <ul class="list-group">
+          <li class="list-group-item">Thing 1<div class="btn-group" role="group" aria-label="Basic example">
+            <button type="button" class="btn btn-secondary"><svg class="bi bi-check-circle" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" d="M15.354 2.646a.5.5 0 010 .708l-7 7a.5.5 0 01-.708 0l-3-3a.5.5 0 11.708-.708L8 9.293l6.646-6.647a.5.5 0 01.708 0z" clip-rule="evenodd"/>
+              <path fill-rule="evenodd" d="M8 2.5A5.5 5.5 0 1013.5 8a.5.5 0 011 0 6.5 6.5 0 11-3.25-5.63.5.5 0 11-.5.865A5.472 5.472 0 008 2.5z" clip-rule="evenodd"/>
+            </svg></button>
+            <button type="button" class="btn btn-secondary"><svg class="bi bi-pencil-square" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15.502 1.94a.5.5 0 010 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 01.707 0l1.293 1.293zm-1.75 2.456l-2-2L4.939 9.21a.5.5 0 00-.121.196l-.805 2.414a.25.25 0 00.316.316l2.414-.805a.5.5 0 00.196-.12l6.813-6.814z"/>
+              <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 002.5 15h11a1.5 1.5 0 001.5-1.5v-6a.5.5 0 00-1 0v6a.5.5 0 01-.5.5h-11a.5.5 0 01-.5-.5v-11a.5.5 0 01.5-.5H9a.5.5 0 000-1H2.5A1.5 1.5 0 001 2.5v11z" clip-rule="evenodd"/>
+            </svg></button>
+            <button type="button" class="btn btn-secondary">  <svg class="bi bi-trash" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5.5 5.5A.5.5 0 016 6v6a.5.5 0 01-1 0V6a.5.5 0 01.5-.5zm2.5 0a.5.5 0 01.5.5v6a.5.5 0 01-1 0V6a.5.5 0 01.5-.5zm3 .5a.5.5 0 00-1 0v6a.5.5 0 001 0V6z"/>
+              <path fill-rule="evenodd" d="M14.5 3a1 1 0 01-1 1H13v9a2 2 0 01-2 2H5a2 2 0 01-2-2V4h-.5a1 1 0 01-1-1V2a1 1 0 011-1H6a1 1 0 011-1h2a1 1 0 011 1h3.5a1 1 0 011 1v1zM4.118 4L4 4.059V13a1 1 0 001 1h6a1 1 0 001-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z" clip-rule="evenodd"/>
+            </svg></button>
+          </div></li>
+          <li class="list-group-item">Thing 2</li>
+          <li class="list-group-item disabled" aria-disabled="true">Thing 3</li>
+          <li class="list-group-item disabled" aria-disabled="true">Thing 4</li>
+          <li class="list-group-item disabled" aria-disabled="true">Thing 5</li>
+        </ul>
+      </div>
+      <div class="col-12 col-sm-4 listOfThings" >
+        You have 4 important things to do!
+        <ul class="list-group">
+          <li class="list-group-item">Thing 1</li>
+          <li class="list-group-item">Thing 2</li>
+          <li class="list-group-item">Thing 3</li>
+          <li class="list-group-item">Thing 4</li>
+          <li class="list-group-item disabled" aria-disabled="true">Thing 5</li>
+          <li class="list-group-item disabled" aria-disabled="true">Thing 6</li>
+        </ul>
+      </div>
+      <div class="col-12 col-sm-4 listOfThings" >
+        You have 5 non-urgent things to do!
+        <ul class="list-group">
+          <li class="list-group-item">Thing 1</li>
+          <li class="list-group-item">Thing 2</li>
+          <li class="list-group-item">Thing 3</li>
+          <li class="list-group-item">Thing 4</li>
+          <li class="list-group-item">Thing 5</li>
+          <li class="list-group-item disabled" aria-disabled="true">Thing 6</li>
+          <li class="list-group-item disabled" aria-disabled="true">Thing 7</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
