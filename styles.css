@@ -4,10 +4,11 @@ h1 {
 
 body {
     font-size: large;
+    background-color: lightskyblue;
 }
 
 .listOfThings {
-    background-color: lightgreen;
+    /* background-color: lightgreen; */
     border: green;
     border-width: 20px;
 }
