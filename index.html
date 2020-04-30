@@ -13,34 +13,14 @@
 </head>
 <body>
 
-  <div class = "container">
-    <h1>To Do List</h1>
+  <div class = "container heading">
+    <h1><strong>To Do List</strong></h1>
+    <!-- <p>Sometimes it can be hard to keep track of everything we need to do. Just add what you need to do and how urgent it is and we'll help you prioritise your tasks!</p> -->
   </div>
 
-  <br>
-  <!-- <div class="input-group mb-3">
-    <input type="text" class="form-control" placeholder="What do you need to do?" aria-label="Recipient's username" aria-describedby="button-addon2">
-    <div class="input-group-append">
-      <button class="btn btn-outline-secondary" type="button" id="button-addon2">Add</button>
-    </div>
-  </div> -->
+  <!-- <br> -->
+ 
   <div class="container">
-
-    <!-- <div class="input-group">
-      <input type="text" aria-label="Thing" class="form-control" placeholder="What do you need to do?">
-      <input type="date" aria-label="Due date" class="form-control" placeholder="When is it due?">
-      <div class="dropdown-menu">
-        <a class="dropdown-item" href="#">Action</a>
-        <a class="dropdown-item" href="#">Another action</a>
-        <a class="dropdown-item" href="#">Something else here</a>
-      </div>
-      <div class="input-group-append">
-          <button class="btn btn-outline-secondary" type="button" id="button-addon2">Add</button>
-      </div>
-    </div> -->
-
-
-
     <div class="input-group">
       <input type="text" class="form-control" aria-label="Text input with dropdown button" placeholder="What do you need to do?">
       <div class="input-group-append">
@@ -52,26 +32,12 @@
         </select>
       </div>
       <div class="input-group-append">
-        <button class="btn btn-outline-secondary" type="button" id="button-addon2">Add</button>
+        <button class="btn btn-secondary" type="button" id="button-addon2">Add</button>
       </div>
     </div>
-
-    <!-- <div class="input-group mb-3">
-      <select class="custom-select" id="inputGroupSelect02">
-        <option selected>How urgent is this?</option>
-        <option value="1">One</option>
-        <option value="2">Two</option>
-        <option value="3">Three</option>
-      </select>
-      <div class="input-group-append">
-        <label class="input-group-text" for="inputGroupSelect02">Add</label>
-      </div>
-    </div> -->
-
-
-
   </div>
   
+  <!-- <div class="btn-group btn-group-sm" role="group" aria-label="...">...</div> -->
 
   
 
@@ -80,14 +46,14 @@
   <div class="container">
     <div class="row">
       <div class="col-12 col-sm-4 listOfThings" >
-        You have 2 URGENT things to do!
+        <div class="list_heading">You have <strong>2 URGENT</strong> things to do!</div>
         <ul class="list-group">
-          <li class="list-group-item d-flex justify-content-between align-items-center">Pay credit card bill<div class="btn-group" role="group" aria-label="Basic example">
+          <li class="list-group-item d-flex justify-content-between align-items-center">Pay credit card bill<div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
             <button type="button" class="btn btn-secondary">Done</button>
             <button type="button" class="btn btn-secondary">Edit</button>
             <button type="button" class="btn btn-secondary">Delete</button>
           </div></li>
-          <li class="list-group-item d-flex justify-content-between align-items-center">Thing 2<div class="btn-group" role="group" aria-label="Basic example">
+          <li class="list-group-item d-flex justify-content-between align-items-center">Thing 2<div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
             <button type="button" class="btn btn-secondary">Done</button>
             <button type="button" class="btn btn-secondary">Edit</button>
             <button type="button" class="btn btn-secondary">Delete</button>
@@ -98,24 +64,24 @@
         </ul>
       </div>
       <div class="col-12 col-sm-4 listOfThings" >
-        You have 4 important things to do!
+        <div class="list_heading">You have <strong>4 important</strong> things to do!</div>
         <ul class="list-group">
-          <li class="list-group-item d-flex justify-content-between align-items-center">Walk the dog<div class="btn-group" role="group" aria-label="Basic example">
+          <li class="list-group-item d-flex justify-content-between align-items-center">Walk the dog<div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
             <button type="button" class="btn btn-secondary">Done</button>
             <button type="button" class="btn btn-secondary">Edit</button>
             <button type="button" class="btn btn-secondary">Delete</button>
           </div></li>
-          <li class="list-group-item d-flex justify-content-between align-items-center">Empty the dishwasher<div class="btn-group" role="group" aria-label="Basic example">
+          <li class="list-group-item d-flex justify-content-between align-items-center">Empty the dishwasher<div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
             <button type="button" class="btn btn-secondary">Done</button>
             <button type="button" class="btn btn-secondary">Edit</button>
             <button type="button" class="btn btn-secondary">Delete</button>
           </div></li>
-          <li class="list-group-item d-flex justify-content-between align-items-center">Blah blah blah blah blah blah blah blah blah blah blah<div class="btn-group" role="group" aria-label="Basic example">
+          <li class="list-group-item d-flex justify-content-between align-items-center">Blah blah blah blah blah blah blah blah blah blah blah<div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
             <button type="button" class="btn btn-secondary">Done</button>
             <button type="button" class="btn btn-secondary">Edit</button>
             <button type="button" class="btn btn-secondary">Delete</button>
           </div></li>
-          <li class="list-group-item d-flex justify-content-between align-items-center">Thing 4<div class="btn-group" role="group" aria-label="Basic example">
+          <li class="list-group-item d-flex justify-content-between align-items-center">Thing 4<div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
             <button type="button" class="btn btn-secondary">Done</button>
             <button type="button" class="btn btn-secondary">Edit</button>
             <button type="button" class="btn btn-secondary">Delete</button>
@@ -125,19 +91,14 @@
         </ul>
       </div>
       <div class="col-12 col-sm-4 listOfThings" >
-        You have 2 non-urgent things to do!
+        <div class="list_heading">You have <strong>2 non-urgent</strong> things to do!</div>
         <ul class="list-group">
-          <li class="list-group-item d-flex justify-content-between align-items-center">Thing 1<div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Actions
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
+          <li class="list-group-item d-flex justify-content-between align-items-center">Thing 1<div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+            <button type="button" class="btn btn-secondary">Done</button>
+            <button type="button" class="btn btn-secondary">Edit</button>
+            <button type="button" class="btn btn-secondary">Delete</button>
           </div></li>
-          <li class="list-group-item d-flex justify-content-between align-items-center">Thing 2<div class="btn-group" role="group" aria-label="Basic example">
+          <li class="list-group-item d-flex justify-content-between align-items-center">Thing 2<div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
             <button type="button" class="btn btn-secondary">Done</button>
             <button type="button" class="btn btn-secondary">Edit</button>
             <button type="button" class="btn btn-secondary">Delete</button>
