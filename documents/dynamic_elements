@@ -1,0 +1,19 @@
+
+DYNAMIC ELEMENTS
+
+The number of tasks in list heading will update to count the number of active tasks in each list
+
+Text input in the add task element
+
+List of tasks - size can change depending on number of tasks and content of each task
+
+I'll need to make something for the user to edit a task
+
+
+POTENTIAL PROBLEMS?
+
+What if too many tasks are added? Will it scroll? Will it still look OK?
+
+What if the user accidentally deletes a task? Do I need an undo button?
+
+
